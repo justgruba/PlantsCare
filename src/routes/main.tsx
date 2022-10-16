@@ -1,5 +1,7 @@
+import DatePicker from "../calendarComponents/DatePicker";
+
 function Main() {
-    return <p>Main calendar page</p>
+    return <DatePicker/>
 }
 
 export default Main;
