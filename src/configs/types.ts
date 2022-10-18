@@ -5,3 +5,4 @@ export interface Date {
 export interface Weekday {
     letter: string;
 }
+

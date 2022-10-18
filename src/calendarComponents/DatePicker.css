@@ -4,18 +4,10 @@
     height: 250px;
 }
 
-.calendar-container {
-    width: 55%;
-    margin: auto;
-    position: relative;
-    top: -50px;
-    padding-top: 200px;
+
+.datepicker-container, .calendar {
+    height: 10px;
+    background: #282c34;
 }
 
-.weekdays-container {
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    background: white;
-}
 
