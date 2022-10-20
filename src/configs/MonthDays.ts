@@ -1,11 +1,11 @@
 
 
-export function generateDates(month: number, year: number): {day?: number | false, month: number, year:number}[]{
-    let dates: {day: number | false, month: number, year: number}[] = [];
+export function generateDates(month: number, year: number): {day: number, month: number, year:number}[]{
+    let dates: {day: number, month: number, year: number}[] = [];
     const days = countOfDaysInMonth(month, year);
     const getFirstDay = getFirstDayOfMonth(month, year);
     for(let i=1; i < getFirstDay; i++){
-        dates.push({day: false, month: 0, year: 0});
+        dates.push({day: 0, month: 0, year: 0});
     }
     for(let i=1; i <= days; i++){
         let date: number = i
