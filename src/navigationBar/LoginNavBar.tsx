@@ -1,23 +1,22 @@
 import NavBar from "./NavBar";
-import {Box, Button, Typography} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import React from "react";
 import {styled} from "@mui/material/styles";
 import {Link} from "react-router-dom";
 
-function MainNavBar() {
+function LoginNavBar() {
     return <NavBar>
         <Box  display="grid" gridTemplateColumns='repeat(3, 3fr)'>
-            <Typography variant="h4">Hello Mart</Typography>
+            <Typography variant={"h4"}>Sign Up</Typography>
             <Box paddingLeft={30} paddingTop={1}>
-                <CustomizedLink className="App-link" to="/signup">Plants</CustomizedLink>
+                <CustomizedLink className="App-link" to="/signup">SignUp</CustomizedLink>
             </Box>
             <Box paddingLeft={30} paddingTop={1}>
-                <CustomizedLink className="App-link" to="/">LogOut</CustomizedLink>
+                <CustomizedLink className="App-link" to="/">Main</CustomizedLink>
             </Box>
         </Box>
     </NavBar>
 }
-
 const CustomizedLink = styled(Link) `
   display: inline-flex;
   color: white;
@@ -29,4 +28,4 @@ const CustomizedLink = styled(Link) `
     color: #757587;
   }`;
 
-export default MainNavBar;
+export default LoginNavBar;

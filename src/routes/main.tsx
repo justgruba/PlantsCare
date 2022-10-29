@@ -1,6 +1,6 @@
-import DatePicker from "../calendarComponents/DatePicker";
-import {Box, Typography} from "@mui/material";
-import MyPlants from "../myPlants/MyPlants";
+import DatePicker from "../calendar/DatePicker";
+import {Box} from "@mui/material";
+import Plants from "../plants/PlantsPicker";
 import MainNavBar from "../navigationBar/MainNavBar";
 
 function Main() {
@@ -8,7 +8,7 @@ function Main() {
         <Box>
                 <MainNavBar/>
                 <DatePicker/>
-                <MyPlants/>
+                <Plants/>
         </Box>
     );
 }
