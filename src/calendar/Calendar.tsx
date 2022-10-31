@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Box, Button, Zoom, Slide} from "@mui/material";
+import {Box, Button, Zoom, Slide, Typography} from "@mui/material";
 import { generateDates } from "./MonthDays";
 import { Months } from "./Months"
 import {Weekdays} from "./Weekdays";
@@ -79,9 +79,9 @@ function Calendar({}):JSX.Element {
                 onClick={closePopUpHandler}>
             <MonthsChanging nextMonth={getNextMonth} prevMonth={getPreviousMonth} currentDate={`${Months[currentMonth]} ${currentYear}`}/>
             <CustomizedCalendar>
-                {Weekdays.map(day => ( <Box margin="auto">{day}</Box>))}
+                {Weekdays.map(day => ( <Box margin="auto"><Typography>{day}</Typography></Box>))}
                 {generateDates(currentMonth, currentYear).map(
-                   date => (<Button disabled={date.day === 0 }  sx={{borderRadius: 2, size: "small"}} onClick={() => setPopUpHandler({day: date.day, month: date.month, year: date.year})}>{date.day !== 0 && date.day}</Button>))}
+                    date => (<Button disabled={date.day === 0 }  sx={{borderRadius: 2, size: "small"}} onClick={() => setPopUpHandler({day: date.day, month: date.month, year: date.year})}>{date.day !== 0 && date.day}</Button>))}
                 <Slide in={popUp} >
                     { <CustomizedCardContainer>
                         <Card day={clickedDate.day} month={clickedDate.month} year={clickedDate.year}/>

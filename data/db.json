@@ -1,0 +1,64 @@
+{
+       "plants": [
+          {
+            "id": 1,
+            "photo": "images/aloes.jpg",
+            "title": "Aloes"
+          },
+          {
+            "id": 2,
+            "photo": "images/bazylia.jpg",
+            "title": "Bazylia"
+          },
+          {
+            "id": 3,
+            "photo": "images/chamedora.jpg",
+            "title": "Chamedora"
+          },
+          {
+            "id": 4,
+            "photo": "images/fikus.jpg",
+            "title": "Fikus"
+          },
+          {
+            "id": 5,
+            "photo": "images/kakaowiec.jpg",
+            "title": "Kakaowiec"
+          },
+          {
+            "id": 6,
+            "photo": "images/paprotka.jpg",
+            "title": "Paprotka"
+          },
+          {
+            "id": 7,
+            "photo": "images/papryczka.jpg",
+            "title": "Papryczka"
+          },
+          {
+            "id": 8,
+            "photo": "images/pieniazek.jpg",
+            "title": "Pieniążek"
+          },
+          {
+            "id": 9,
+            "photo": "images/sansewieria.jpg",
+            "title": "Sansewieria"
+          },
+          {
+            "id": 10,
+            "photo": "images/senecio.jpg",
+            "title": "Senecio"
+          },
+          {
+            "id": 11,
+            "photo": "images/wrzos.jpg",
+            "title": "Wrzos"
+          },
+          {
+            "id": 12,
+            "photo": "images/zielistka.jpg",
+            "title": "Zielistka"
+          }
+       ]
+  }

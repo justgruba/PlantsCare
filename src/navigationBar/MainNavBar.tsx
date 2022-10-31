@@ -9,10 +9,10 @@ function MainNavBar() {
         <Box  display="grid" gridTemplateColumns='repeat(3, 3fr)'>
             <Typography variant="h4">Hello Mart</Typography>
             <Box paddingLeft={30} paddingTop={1}>
-                <CustomizedLink className="App-link" to="/signup">Plants</CustomizedLink>
+                <CustomizedLink className="App-link" to="/signup"><Typography variant={"h5"}>Plants</Typography></CustomizedLink>
             </Box>
             <Box paddingLeft={30} paddingTop={1}>
-                <CustomizedLink className="App-link" to="/">LogOut</CustomizedLink>
+                <CustomizedLink className="App-link" to="/"><Typography variant={"h5"}>Log Out</Typography></CustomizedLink>
             </Box>
         </Box>
     </NavBar>

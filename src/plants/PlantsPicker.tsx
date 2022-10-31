@@ -14,7 +14,7 @@ const PlantsPicker: React.FC<{}> = ({}) => {
 const PickerPlantsContainer= styled('div') `
   background:  linear-gradient(#F4E8CF, #F3D396);
   width: 100%;
-  height: 300px;`
+  height: 500px;`
 
 const PlantsContainer = styled('div')`
   height: 2px;
