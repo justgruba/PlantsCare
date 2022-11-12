@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import {Box, Button, Zoom, Slide, Typography} from "@mui/material";
+import {Box, Button, Slide, Typography} from "@mui/material";
 import { generateDates } from "./MonthDays";
 import { Months } from "./Months"
 import {Weekdays} from "./Weekdays";
 import Card from "../popUp/Card";
 import MonthsChanging from "./calendarSegments/MonthsChanging";
+
 import {styled} from "@mui/material/styles";
 interface Date {
     day: number,
@@ -15,11 +16,11 @@ interface Date {
 function Calendar({}):JSX.Element {
 
     let date = new Date();
+    const today= useState<Date>({day: date.getDate(),  month: date.getMonth(), year: date.getFullYear()})[0];
     const [currentYear, setCurrentYear] = useState<number>(date.getFullYear());
     const [currentMonth, setCurrentMonth] = useState<number>(date.getMonth());
     const [clickedDate, setClickedDate] = useState<Date>({day: 0,  month: 0, year: 0});
     const [popUp, setPopUp] = useState<boolean>(false);
-
     const setPopUpHandler = (date: Date): void => {
         setPopUp((prev) => !prev);
         setClickedDate(date);
@@ -47,33 +48,6 @@ function Calendar({}):JSX.Element {
             setCurrentYear((prevYear) => prevYear + 1)
         }
     }
-    const CustomizedMainCalendarCointainer = styled(Box) `
-      position: absolute;
-      border-radius: 20px;
-      left: 300px;
-      top: 80px;
-      width: 600px;
-      height: 500px;
-      padding-left: 10px;
-      padding-right: 10px;
-      color: white;
-      background-color: #193C40;
-      box-shadow: 5px 5px 10px #38184C;
-    `;
-    const CustomizedCalendar = styled(Box) `
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: repeat(7, 1fr);
-      column-gap: 2px;
-      row-gap: 20px;
-    `;
-    const CustomizedCardContainer = styled(Box)`
-      position: absolute;
-      width: 500px;
-      height: 300px;
-      background-color: #38184C;
-      border-radius: 20px;
-    `
     return(
         <CustomizedMainCalendarCointainer
                 onClick={closePopUpHandler}>
@@ -81,14 +55,42 @@ function Calendar({}):JSX.Element {
             <CustomizedCalendar>
                 {Weekdays.map(day => ( <Box margin="auto"><Typography>{day}</Typography></Box>))}
                 {generateDates(currentMonth, currentYear).map(
-                    date => (<Button disabled={date.day === 0 }  sx={{borderRadius: 2, size: "small"}} onClick={() => setPopUpHandler({day: date.day, month: date.month, year: date.year})}>{date.day !== 0 && date.day}</Button>))}
-                <Slide in={popUp} >
-                    { <CustomizedCardContainer>
+                    date => (<Button disabled={date.day === 0 }  sx={{borderRadius: 2, size: "small"}} onClick={() => setPopUpHandler({day: date.day, month: date.month, year: date.year})}>
+                        {JSON.stringify(date) === JSON.stringify(today)?
+                            (<CustomizedToday>{date.day}</CustomizedToday>) : (date.day !== 0 && date.day)}
+                    </Button>))}
+                <Slide in={popUp}>
+                    { <Box position="absolute">
                         <Card day={clickedDate.day} month={clickedDate.month} year={clickedDate.year}/>
-                    </CustomizedCardContainer>}
+                    </Box>}
                 </Slide>
             </CustomizedCalendar>
         </CustomizedMainCalendarCointainer>);
 }
-
 export default Calendar;
+
+const CustomizedMainCalendarCointainer = styled(Box) `
+  position: absolute;
+  border-radius: 20px;
+  left: 300px;
+  top: 80px;
+  width: 600px;
+  height: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #193C40;
+  box-shadow: 5px 5px 10px #38184C`;
+const CustomizedCalendar = styled(Box) `
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  column-gap: 2px;
+  row-gap: 20px`;
+
+const CustomizedToday = styled(Typography)`
+  background-color: coral;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+`

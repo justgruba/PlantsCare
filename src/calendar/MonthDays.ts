@@ -8,7 +8,6 @@ export function generateDates(month: number, year: number): {day: number, month:
     }
 
     for(let i=1; i <= days; i++){
-        let date: number = i
         dates.push({day: i, month: month, year: year});
     }
 

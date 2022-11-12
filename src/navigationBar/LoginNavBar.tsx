@@ -7,9 +7,9 @@ import {Link} from "react-router-dom";
 function LoginNavBar() {
     return <NavBar>
         <Box  display="grid" gridTemplateColumns='repeat(3, 3fr)'>
-            <Typography variant={"h4"}>Sign Up</Typography>
+            <Typography variant={"h4"}>Log In</Typography>
             <Box paddingLeft={30} paddingTop={1}>
-                <CustomizedLink className="App-link" to="/signup"><Typography variant={"h5"}>Sign Up</Typography></CustomizedLink>
+                <CustomizedLink className="App-link" to="/signup"><Typography variant={"h5"}>SignUp</Typography></CustomizedLink>
             </Box>
             <Box paddingLeft={30} paddingTop={1}>
                 <CustomizedLink className="App-link" to="/"><Typography variant={"h5"} >Main</Typography></CustomizedLink>

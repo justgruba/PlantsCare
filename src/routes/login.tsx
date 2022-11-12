@@ -1,27 +1,58 @@
 import {Box, Button, TextField, Typography} from "@mui/material";
-import {Link, useNavigate} from "react-router-dom";
-import NavBar  from "../navigationBar/NavBar";
+import {useNavigate} from "react-router-dom";
 import {styled} from "@mui/material/styles";
-import React from "react";
 import LoginNavBar from "../navigationBar/LoginNavBar";
-function Login() {
+import Footer from "../footer/Footer";
+import React, {useEffect, useState} from "react";
+import {useUserContext} from "../UserProvider";
+type User =  {
+    id: number,
+    name: string,
+    email: string,
+    password: string,
+    plants_index: number[]
+};
+
+const Login = () => {
+    const [email, setEmail] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
+    const [users, setUsers] = useState<User[]>([]);
+    const {setCurrent} = useUserContext();
     const  navigate = useNavigate();
-    function handleClick() : void {
-        navigate("/main")
+
+    function handleClick(e: React.SyntheticEvent) : void {
+        e.preventDefault();
+        let user = users.find(user => user.password === password && user.email === email);
+
+        if(user !== undefined){
+            setCurrent(user);
+            navigate('/main');
+        }
     }
+    useEffect(() => {
+        fetch('http://localhost:3004/users')
+            .then( res => {
+                return res.json()
+            })
+            .then((data)=>{
+              setUsers(data);
+            });
+    }, []);
+
     return (
         <CustomizedBody>
             <LoginNavBar/>
             <Box>
-                <form>
+                <form onSubmit={handleClick}>
                     <CustomizedLoginCard>
                         <Typography  variant={"h3"} padding={3} textAlign={"center"} color={"primary.main"}>Log In</Typography>
-                        <TextField margin={"normal"}  type="email" variant={"outlined"} placeholder={"Email"}/>
-                        <TextField margin={"normal"} type="password" variant={"outlined"} placeholder={"Password"}/>
-                        <Button variant={"contained"} onClick={handleClick}>Log In</Button>
+                        <TextField onChange={(e) => setEmail(e.target.value)} value={email} margin={"normal"}  type="email" variant={"outlined"} placeholder={"Email"}/>
+                        <TextField onChange={(e) => setPassword(e.target.value)}  value={password} margin={"normal"} type="password" variant={"outlined"} placeholder={"Password"}/>
+                        <Button variant={"contained"} type="submit">Log In</Button>
                     </CustomizedLoginCard>
                 </form>
             </Box>
+            <Footer/>
         </CustomizedBody>);
 }
 const CustomizedLoginCard = styled(Box)`
@@ -42,16 +73,4 @@ const CustomizedBody = styled(Box)`
   height: 600px;
   background:  linear-gradient(#F3D396, #F4E8CF);
 `
-const CustomizedLink = styled(Link) `
-  display: inline-flex;
-  color: white;
-  height: 50px;
-  text-decoration: none;
-  font-size: 200%;
-  padding-right: 10px;
-  &:focus {
-    color: #757587;
-  }`;
-
-
 export default Login;

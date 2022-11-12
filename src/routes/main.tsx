@@ -2,6 +2,7 @@ import DatePicker from "../calendar/DatePicker";
 import {Box} from "@mui/material";
 import Plants from "../plants/PlantsPicker";
 import MainNavBar from "../navigationBar/MainNavBar";
+import Footer from "../footer/Footer";
 
 function Main() {
     return (
@@ -9,6 +10,7 @@ function Main() {
                 <MainNavBar/>
                 <DatePicker/>
                 <Plants/>
+                <Footer/>
         </Box>
     );
 }

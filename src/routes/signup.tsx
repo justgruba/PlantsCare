@@ -2,6 +2,7 @@ import {Box, Button, TextField, Typography} from "@mui/material";
 import {styled} from "@mui/material/styles";
 import React from "react";
 import SignupNavBar from "../navigationBar/SignupNavBar";
+import Footer from "../footer/Footer";
 
 export default function Signup() {
     return (
@@ -18,6 +19,7 @@ export default function Signup() {
                     </CustomizedSignUpCard>
                 </form>
             </Box>
+            <Footer/>
         </CustomizedBody>
     );
 }

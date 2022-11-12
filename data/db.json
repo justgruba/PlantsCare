@@ -1,64 +1,109 @@
 {
        "plants": [
           {
-            "id": 1,
+            "id": 0,
             "photo": "images/aloes.jpg",
-            "title": "Aloes"
+            "title": "Aloes",
+            "watering": "7/9/2022",
+            "conditioner": "6/9/2022",
+            "des": "Niewiele roślin nadających się do uprawy w mieszkaniu posiada tak cenne właściwości lecznicze jak Aloe vera. Tworzy rozetę liści: grubych, mięsistych, o mieczowatym kształcie. Na brzegach liści wyrastają delikatne w dotyku kolce. Po przekrojeniu liścia w poprzek widoczny jest sącząca się z kanalików skóry żółta ciecz - aloina i galaretowaty, zielonawy miąższ, bogaty m. in. w witaminy (A, C, E i z grupy B), sole mineralne (min. potas, wapń, magnez, fosfor, siarkę, cynk, molibden, miedź), kwasy organiczne (min. cynamonowy, bursztynowy), wielocukry, glikoproteidy (aloektynę) oraz stymulatory biogenne. Dzięki takiemu bogactwu składników, miąższ aloesu wykazuje właściwości bakteriobójcze, regenerujące błonę śluzową i skórę, przeciwzapalne oraz pobudzające układ odpornościowy. Roślina dorasta do około 60 cm wysokości. Najlepiej postawić ją w miejscu nasłonecznionym. Od wiosny do jesieni podlewać obficie i nawozić co dwa tygodnie płynnym nawozem. Zima podlewanie ograniczyć i zaprzestać nawożenia."
+          },
+          {
+            "id": 1,
+            "photo": "images/bazylia.jpg",
+            "title": "Bazylia",
+            "watering": "13/10/2022",
+            "conditioner": "12/4/2022",
+            "des": "ale"
           },
           {
             "id": 2,
-            "photo": "images/bazylia.jpg",
-            "title": "Bazylia"
+            "photo": "images/chamedora.jpg",
+            "title": "Chamedora",
+            "watering": "4/7/2022",
+            "conditioner": "23/5/2022",
+            "des": "Ciekawa roślina doniczkowa o pięknym, jasno zielonym, pierzastym ulistnieniu. W naturze gatunek ten występuje w lasach tropikalnych na południu Meksyku i Gwatemali, gdzie rośnie pod koronami wysokich drzew. Palma koralowa w warunkach domowych osiąga około 150 cm wysokości. W momencie kwitnienia ponad ulistnieniem pojawia się pęd, na którym osadzone są liczne, zielono-żółte kwiaty w kształcie drobniutkich kuleczek. Gatunek ten rośnie bardzo wolno, wypuszczając co roku około 2-3 liści, co jest zaletą w uprawie domowej, gdyż nie jest wymagane częste przesadzanie. Chamaedorea elegans wyróżnia się egzotycznym wyglądem, a dodatkowo posiada niewielkie wymagania uprawowe. Gatunek stanowi piękna, niezwykle elegancką ozdobę wnętrz. Gęsty pióropusz, pierzastych, jasno zielonych liści prezentuje się niezwykle efektownie, dlatego roślina zasługuje na umieszczenie jej w wyeksponowanym miejscu."
           },
           {
             "id": 3,
-            "photo": "images/chamedora.jpg",
-            "title": "Chamedora"
+            "photo": "images/fikus.jpg",
+            "title": "Fikus",
+            "watering": "2/8/2022",
+            "conditioner": "2/4/2022",
+            "des": "Ficus pumila pochodzi z Chin i Japonii, gdzie porasta tropikalne lasy, wspinając się po drzewach i naturalnych podporach oraz płożąc się. Wykształca długie, cienkie pędy, które rozrastają się na wszystkie strony i pokryte są małymi, prawie okrągłymi liśćmi o średnicy ok. 1 cm. Płoży się i wspina po podporach za pomocą korzeni czepnych. Odmiana 'White Pumila' jest biało-zieloną wersją zielonolistnego gatunku. Cechują ją mniejsze i bardziej okrągławe liście z zielonym, nieregularnym środkiem i białym, szerokim obrzeżeniem. Blaszka liściowa jest delikatnie pofalowana i rozpięta na siatce mocnych nerwów. W uprawie domowej ficus pnący 'White Sunny' prowadzony przy podporach, osiąga ok. 100 cm wysokości. Z racji tego, że preferuje wilgotne i ciepłe stanowiska, będzie idealną rośliną do uprawy w szklanych pojemnikach i terrariach. Pięknie wygląda i dobrze rośnie prowadzony na kawałku pnia czy kory lub innej naturalnej konstrukcji, gdyż chętnie przyczepia się do powierzchni i daje niesamowicie atrakcyjny efekt biało-zielonej ścianki. Dobrze też reaguje na przycinanie."
           },
           {
             "id": 4,
-            "photo": "images/fikus.jpg",
-            "title": "Fikus"
+            "photo": "images/kakaowiec.jpg",
+            "title": "Kakaowiec",
+            "watering": "2/6/2022",
+            "conditioner": "2/11/2022",
+            "des": "ale"
           },
           {
             "id": 5,
-            "photo": "images/kakaowiec.jpg",
-            "title": "Kakaowiec"
+            "photo": "images/paprotka.jpg",
+            "title": "Paprotka",
+            "watering": "2/4/2022",
+            "conditioner": "2/1/2022",
+            "des": "Nefrolepsis wyniosły jest najbardziej znaną i najpopularniejszą paprocią, którą od pokoleń uprawia się w domach. Zdobiła mieszkania naszych prababć i peerelowskie meblościanki rodziców, a obecnie znów przeżywa swój renesans. W naturze rośnie w lasach tropikalnych Ameryki Południowej. Zachwyca pięknymi, długimi pierzastymi liśćmi, które przewieszają się ku dołowi, wyginając łukowato. W zależności od odmiany, liście mogą osiągać nawet do 130 cm długości. Tworzą bujny i spektakularnie zwisający pióropusz, jednocześnie zachowując przy tym lekki i ażurowy wygląd całej rośliny. Paproć nefrolepis najpiękniej wygląda uprawiana w wiszących pojemnikach lub ustawiona na wyeksponowanych, wysokich słupkach i kwietnikach. Jest rośliną ponadczasową i zawsze modną, która pasuje do każdego stylu i wnętrza. Ma także korzystny wpływ na zdrowie człowieka, ponieważ jonizuje ujemnie powietrze."
           },
           {
             "id": 6,
-            "photo": "images/paprotka.jpg",
-            "title": "Paprotka"
+            "photo": "images/papryczka.jpg",
+            "title": "Papryczka",
+            "watering": "2/3/2022",
+            "conditioner": "2/4/2022",
+            "des": "ale"
           },
           {
             "id": 7,
-            "photo": "images/papryczka.jpg",
-            "title": "Papryczka"
+            "photo": "images/pieniazek.jpg",
+            "title": "Pieniążek",
+            "watering": "2/8/2022",
+            "conditioner": "2/9/2022",
+            "des": "Pilea peperomiowata jest dość niepozorną, a za razem bardzo ciekawą rośliną doniczkową, która w ostatnich latach wróciła do naszych salonów po długiej przerwie. Potocznie nazywana jest \"pieniążkiem\", ze względu na kształt liści, które przypominają monety. Można spotkać się też z określeniem „wystrzałowa roślina” - ponieważ pilea wystrzeliwuje dojrzałe nasiona na sporą odległość. W młodym wieku pilea peperomiowata wygląda dość niepozornie i tworzy rodzaj niewielkiej, luźnej rozetki złożonej z kilku małych, prawie okrągłych listków osadzonych na długich, cienkich ogonkach. Z czasem jednak jej główny pęd rośnie w górę i drewnieje, a roślina zaczyna przypominać oryginalne, miniaturowe drzewko z okrągłymi liśćmi, dzięki czemu znacznie zyskuje na atrakcyjności. Z całą pewnością pilea zasługuję na uwagę dzięki intensywnie zielonym liściom i ciekawej formie. Lubi jasne pomieszczenia o dużej ilości rozproszonego światła. Podłoże do uprawy powinno być stale wilgotne, jednak chwilowe przesuszenie nie przeszkodzi jej w zachowaniu pełnej atrakcyjności."
           },
           {
             "id": 8,
-            "photo": "images/pieniazek.jpg",
-            "title": "Pieniążek"
+            "photo": "images/sansewieria.jpg",
+            "title": "Sansewieria",
+            "watering": "2/10/2022",
+            "conditioner": "2/2/2022",
+            "des": "Sansevieria trifasciata ‘Laurentii’ to bardzo ciekawy sukulent liściowy. Świetnie znosi warunki mieszkaniowe, jest niewymagający i łatwy w uprawie. Posadzony w ładnej doniczce będzie doskonale się prezentował  i stanowił elegancką ozdobę zarówno nowoczesnych wnętrz nastawionych na minimalizm jak i tradycyjnych mieszkań. Gatunek pochodzi z Afryki równikowej, stąd jego egzotyczna uroda oraz niewielkie wymagania i duża odporność.  Dorasta do około 100-150 cm wysokości, wytwarzając grube, sztywne, wzniesione, mieczowate liście, które dość ściśle do siebie przylegają. Ciemnozielona powierzchnia blaszki liściowej o złotym obrzeżeniu zdobiona jest dodatkowo nieregularnymi, poprzecznymi, szaro-zielonymi pasami. Roślina kwitnie na początku lata. Wówczas pojawiają się niewielkie, biało-kremowe kwiaty, osadzone na długim pędzie. Nie są one zbyt ozdobne, jednak wydzielają przyjemny, mocny, słodkawy zapach."
           },
           {
             "id": 9,
-            "photo": "images/sansewieria.jpg",
-            "title": "Sansewieria"
+            "photo": "images/senecio.jpg",
+            "title": "Senecio",
+            "watering": "2/1/2022",
+            "conditioner": "2/3/2022",
+            "des": "Starzec rowleyanus jest delikatną, płożącą rośliną o niemal metrowych pędach. Jego cechą charakterystyczną są niezwykłe listki uformowane w łezki nieco większe od ziaren grochu. Ta oryginalna roślina pochodzi z południowej Afryki i należy do rodziny astrowatych. Anglicy nazywają ją string of pearls (sznur pereł) ze względu na specyficzną budowę. Na długich, cieniutkich jak nici pędach rozmieszczone są nieregularnie kuliste, liście. Na drobnych, zielonych blaszkach liściowych widoczne jest pasmo wodnistej tkanki, które pełni rolę specjalnego \"okienka” ułatwiającego wnikanie światła w głąb liścia. Jest to piękna, delikatna i wyjątkowo dekoracyjna roślina idealna do uprawy w domowych warunkach. Najładniej starzec ten prezentuje się jako roślina zwisająca."
           },
           {
             "id": 10,
-            "photo": "images/senecio.jpg",
-            "title": "Senecio"
+            "photo": "images/wrzos.jpg",
+            "title": "Wrzos",
+            "watering": "2/4/2022",
+            "conditioner": "2/5/2022",
+            "des": "ale"
           },
           {
             "id": 11,
-            "photo": "images/wrzos.jpg",
-            "title": "Wrzos"
-          },
-          {
-            "id": 12,
             "photo": "images/zielistka.jpg",
-            "title": "Zielistka"
+            "title": "Zielistka",
+            "watering": "2/6/2022",
+            "conditioner": "2/7/2022",
+            "des": "Jedna z najłatwiejszych w uprawie, a przy tym niezwykle atrakcyjna roślina domowa, której wygląd kojarzy się z trawą ozdobną. Tworzy gęste i zwarte kępy, osiągające ok. 30 cm. Dzięki długim, wąskim, lekko przewieszającym się i układającym promieniście liściom wygląda jak niesforna, rozczochrana czuprynka. Liście są jasnozielone, ostro zakończone i ozdobione kremowobiałym marginesem. Odmiana ‘Ocean’ wyróżnia się spośród innych odmian szerszymi liśćmi, a jej forma jest bardziej zwarta, gęsta i krępa. Rzadko wytarza długie, przewieszające się pędy, na których pojawiają się tzw. rozmnóżki. Dzięki temu zachowuje wciąż zwartą formę, a rozrastając się tworzy efektowne kępy kremowo-zielonych liści. Korzenie zielistki są bulwiaste i przystosowane do magazynowania wody w czasie suchego lata. Dzięki temu doskonale znosi ona ewentualne zaniedbania w podlewaniu. Pięknie prezentuje się zarówno w wiszących pojemnikach, jak i na parapetach oraz stolikach. Jest jedną z niewielu roślin, która dobrze wygląda w każdej osłonce, zarówno w stylu klasycznym, jak i w rubasznych osłonkach w kształcie głowy. Sprawdzi się w każdym pomieszczeniu bez względu na styl i funkcjonalność."
           }
-       ]
-  }
+       ],
+      "users": [
+        {
+          "id": 1,
+          "name": "Mart",
+          "email": "asd@gmail.com",
+          "password": "asd",
+          "plants_index": [0, 1, 4, 5, 10, 9, 3, 2]
+        }
+      ]
+}

@@ -1,41 +1,34 @@
-import React from 'react';
-import { Link } from "react-router-dom";
-import NavBar from "./navigationBar/NavBar";
-import {Box} from "@mui/material";
-import {styled} from "@mui/material/styles";
+import {ThemeProvider} from "@mui/material";
+import themes from "./themes/Themes";
+import {Route, Routes} from "react-router-dom";
+import Login from "./routes/login";
+import Main from "./routes/main";
+import Signup from "./routes/signup";
+import React from "react";
+import UserProvider from "./UserProvider";
+import MainPage from "./MainPage";
+type User =  {
+    id: number,
+    name: string,
+    email: string,
+    password: string,
+    plants_index: number[]
+}
 
 function App() {
-    return (
-        <Box>
-            <CustomizedMainPage>
-                <NavBar>
-                    <CustomizedLink className="App-link" to="/login">LogIn</CustomizedLink>
-                    <CustomizedLink className="App-link" to="/signup">SignUp</CustomizedLink>
-                </NavBar>
-            </CustomizedMainPage>
-            <CustomizedMain>
 
-            </CustomizedMain>
-        </Box>
+    return (
+        <ThemeProvider theme={themes}>
+            <UserProvider>
+                    <Routes>
+                            <Route path="login" element={<Login />} />
+                            <Route path="main" element={<Main />} />
+                            <Route path="/" element={<MainPage />} />
+                            <Route path="signup" element={<Signup />} />
+                    </Routes>
+            </UserProvider>
+        </ThemeProvider>
   );
 }
 export default App;
 
-const CustomizedLink = styled(Link) `
-  display: inline-flex;
-  color: white;
-  height: 50px;
-  text-decoration: none;
-  font-size: 200%;
-  padding-right: 10px;
-  &:focus {
-    color: #757587;
-  }`;
-
-const CustomizedMainPage=styled(Box)`
-  text-align: right; `
-
-const CustomizedMain=styled(Box)`
-  height: 600px;
-  background:  linear-gradient(#F3D396, #F4E8CF);
-`

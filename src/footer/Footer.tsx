@@ -1,6 +1,6 @@
 import { styled } from '@mui/material/styles';
 import Image from '../Images/plants.jpg'
-import React from "react";
+import {Typography} from "@mui/material";
 interface MessageProps {
     children: JSX.Element | JSX.Element[];
 }
@@ -11,20 +11,13 @@ const CustomizedNavBar = styled('div') `
   opacity: 0.90;
   box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
   color: white;
-  height: 48px;
-  padding: 0 30px`;
+  height: 50px;`
 
-const NavBarContainer = styled('div')`
-  height: 5px;
-  background: darkgreen;
-`
-function NavBar (props: MessageProps) {
-    return <>
-        <CustomizedNavBar>
-            {props.children}
-        </CustomizedNavBar>
-        <NavBarContainer/>
-        </>
+
+function Footer () {
+    return <CustomizedNavBar>
+        <Typography align="right">Author: Justyna Gruba</Typography>
+    </CustomizedNavBar>
 }
 
-export default NavBar;
+export default Footer;
